@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test Incremental</title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Test incremental/idle game/" />
+		<meta name="author" content="TheWalrusEffect" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+		<div class="sl_container">
+        	<h1>At first there was</h1>
+			<a href="#" id="sl_1" data-hover="Something">Nothing</a>
+		</div>
+        <div class="part2">
+        	<h1>A light <span class="flicker">flickering</span><br /> in the darkness</h1>
+        </div>
+        <div class="part3">
+        	<h1>A tiny particle <br />dancing with <span class="rumble">energy</span></h1>
+        </div>
+        <div class="part4">
+        	<h1>And with a <span class="flash">flash</span><br /> it was gone</h1>
+        </div>
+        <div id="light">&nbsp;</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lettering.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverwords.js"></script>
+        <script type="text/javascript" src="js/candle.js"></script>
+		<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.color-2.1.2.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+		
+		<script type="text/javascript">
+			$(window).load(function(){				
+				$('#sl_1').hoverwords();
+				
+			});
+		</script>
+        <script>
+
+            // Some presets
+            var preset = {
+
+                candle : {
+                    flickerRate    : 10,
+                    spread         : 0.3,
+                    spikeFrequency : 0.05
+                },
+
+                fire : {
+                    flickerRate    : 30,
+                    average        : 3,
+                    spread         : 0.5,
+                    offset         : 0.5,
+                    cssSmooth      : false,
+                    spikeFrequency : 0.2
+                },
+
+                firefly : {
+                    flickerRate    : 5,
+                    average        : 3,
+                    spread         : 0.4,
+                    offset         : 0.4,
+                    spikeFrequency : 0.0
+                }
+
+            }
+
+            // Usage
+            $('.flicker').flicker( preset.candle );
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+@import url('reset.css');
+body {
+	color: #000;
+	background-color: #000;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-size: 16px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+h1 {
+	font-family: 'PT Sans Narrow', arial, serif;
+	color: #fff;
+	font-size: 50px;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+.sl_container {
+	font-family: 'Bevan', arial, serif;
+	font-size: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.sl_container a {
+	color: #fff;
+}
+.sl_container a > span {
+	height: 50px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.sl_container a span span {
+	position: absolute;
+	display: block;
+}
+.sl_container a span span.sl-w1 {
+	color: #fff;
+	text-shadow: 0px 0px 1px #fff;
+	z-index: 2;
+}
+.sl_container {
+	clear: both;
+	display: block;
+}
+#sl_1 {
+	font-family: 'Bevan', arial, serif;
+	cursor: pointer;
+}
+.sl_container a#sl_1 span span.sl-w2, .sl_1_done {
+	font-family: "Bevan", arial, serif;
+	color: #4CE05D;
+	text-shadow: 1px 1px 1px #a78276, 0px 0px 5px #fff;
+	line-height: 50px;
+	z-index: 3;
+	height: 50px;
+	cursor: pointer;
+}
+.part2, .part3, .part4 {
+	font-family: 'Bevan', arial, serif;
+	font-size: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	clear: both;
+	margin-left: 20px;
+	margin-top: 30px;
+	display: none;
+}
+.flicker {
+	color: #EDEC54;
+	cursor: pointer;
+}
+.rumble {
+	color: #5CE8CC;
+	cursor: pointer;
+}
+.flash {
+	-webkit-transition: text-shadow 0.2s linear;
+	-moz-transition: text-shadow 0.2s linear;
+	-ms-transition: text-shadow 0.2s linear;
+	-o-transition: text-shadow 0.2s linear;
+	transition: text-shadow 0.2s linear;
+	color: #F9F98F;
+	cursor: pointer;
+}
+.flash:hover {
+	text-shadow: 0 0 15px #F9F98F;
+}
+#light {
+	width: 100%;
+	height: 100%;
+	background-color: #F9F98F;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.part5, .part6, .part7 {
+	width: 50%;
+	height: 50%;
+	overflow: auto;
+	margin: auto;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	font-family: 'Bevan', arial, serif;
+	font-size: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	display:none;
+}
+
+#everything{
+	font-family: "Bevan", arial, serif;
+	color: #4CE05D;
+	text-shadow: 1px 1px 1px #a78276, 0px 0px 5px #fff;
+	cursor:pointer;
+}
+#sum{
+	font-family: "Bevan", arial, serif;
+	color: #55F5EE;
+	text-shadow: 1px 1px 1px #a78276, 0px 0px 5px #fff;
+	cursor:pointer;
+}
+#molecule{
+	font-family: "Bevan", arial, serif;
+	color: #CF2F2F;
+	text-shadow: 1px 1px 1px #a78276, 0px 0px 5px #fff;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+
+span.clicks{
+	font-family: "Bevan", arial, serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #CF2F2F;
+	text-shadow: 1px 1px 1px #a78276, 0px 0px 2px #fff;
+	cursor:pointer;
+}
+
+.perks{
+	min-height:50px;
+	height:50px;
+	overflow:hidden;
+}
+
+.perk{
+	display:none;
+}
+.upgrade{
+	display:none;
+	cursor:pointer;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:60px;
+	margin-top:20px;
+	
+}
+.upgrade .title{
+	font-family: "Bevan", arial, serif;
+	color: #f3f3f3;
+	text-transform: uppercase;
+	font-size:30px;
+	float:left;
+}
+.upgrade .desc{
+	color:#fff;
+	font-size:14px;
+	float:left;
+}
+.upgrade .amount{
+	float:right;
+	font-size: 40px;
+	color:#fff;
+	line-height:40px;
+}
