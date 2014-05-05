@@ -1,4 +1,4 @@
-PretentiousClicker
+Code Name: PretentiousClicker
 ==================
 
-Incremental Game
+An Incremental/Idle game in progress.
